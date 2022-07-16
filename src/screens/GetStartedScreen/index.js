@@ -25,5 +25,11 @@ export default GetStratedScreen;
 
 const styles = StyleSheet.create({
   page: {padding: 40, justifyContent: 'space-between', flex: 1},
-  desc: {fontSize: 28, fontWeigth: '600', color: 'white', marginTop: 91},
+  desc: {
+    fontSize: 28,
+    fontWeigth: '600',
+    color: 'white',
+    marginTop: 91,
+    fontFamily: 'Nunito-SemiBold',
+  },
 });

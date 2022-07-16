@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffff',
   },
   text: {
+    fontFamily: 'Nunito-SemiBold',
     fontSize: 20,
     marginTop: 20,
     fontWeight: '600',
