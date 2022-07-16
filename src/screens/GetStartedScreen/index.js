@@ -3,7 +3,7 @@ import React from 'react';
 import {ImageBg, Logo} from '../../assets';
 import {Button, Gap} from '../../components';
 
-const GetStratedScreen = () => {
+const GetStratedScreen = ({navigation}) => {
   return (
     <ImageBackground source={ImageBg} style={styles.page}>
       <View>
@@ -13,9 +13,18 @@ const GetStratedScreen = () => {
         </Text>
       </View>
       <View>
-        <Button title="Get Started" />
+        <Button
+          title="Get Started"
+          onPress={() => navigation.navigate('SignUpScreen')}
+        />
         <Gap height={16} />
-        <Button type="secondary" title="Sign In" />
+        <Button
+          type="secondary"
+          title="Sign In"
+          onPress={() => {
+            navigation.navigate('SignInScreen');
+          }}
+        />
       </View>
     </ImageBackground>
   );
