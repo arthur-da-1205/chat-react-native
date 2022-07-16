@@ -1,7 +1,7 @@
 import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {ImageBg, Logo} from '../../assets';
-import {Button} from '../../components';
+import {Button, Gap} from '../../components';
 
 const GetStratedScreen = () => {
   return (
@@ -14,7 +14,7 @@ const GetStratedScreen = () => {
       </View>
       <View>
         <Button title="Get Started" />
-        <View style={{height: 16}} />
+        <Gap height={16} />
         <Button type="secondary" title="Sign In" />
       </View>
     </ImageBackground>
