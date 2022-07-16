@@ -21,10 +21,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffff',
   },
   text: {
-    fontSize: 22,
-    marginTop: 14,
-    fontWeight: 'semibold',
-    color: '#000',
-    fontFamily: 'Nunito',
+    fontSize: 20,
+    marginTop: 20,
+    fontWeight: '600',
+    color: '#112340',
   },
 });

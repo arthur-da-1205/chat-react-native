@@ -1,13 +1,9 @@
 import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import SplashScreen from './screens/SplashScreen';
+import {GetStratedScreen, SplashScreen} from './screens';
 
 const App = () => {
-  return (
-    <View style={styles.page}>
-      <SplashScreen />
-    </View>
-  );
+  return <GetStratedScreen />;
 };
 
 export default App;
