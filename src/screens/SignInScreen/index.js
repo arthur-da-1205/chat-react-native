@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Logo} from '../../assets';
 import {Button, Gap, InputField, LinkButton} from '../../components';
+import {COLORS} from '../../constants/COLORS';
 
 const SignInScreen = () => {
   return (
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontFamily: 'Nunito-SemiBold',
-    color: '#112340',
+    color: COLORS.secondary,
     marginVertical: 40,
     maxWidth: 153,
   },

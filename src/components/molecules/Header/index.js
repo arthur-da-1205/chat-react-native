@@ -1,14 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {ArrowBack} from '../../../assets';
-import {Gap} from '../../atoms';
+import {StyleSheet, Text, View} from 'react-native';
 import {COLORS} from '../../../constants/COLORS';
+import {Button, Gap} from '../../atoms';
 
-const Header = () => {
+const Header = ({onPress, title}) => {
   return (
     <View style={styles.container}>
-      <ArrowBack />
-      <Text style={styles.title}>Header</Text>
+      <Button type="icon-only" icon="dark" onPress={onPress} />
+      <Text style={styles.title}>{title}</Text>
       <Gap width={24} />
     </View>
   );

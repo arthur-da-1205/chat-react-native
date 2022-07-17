@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {TextInput} from 'react-native-gesture-handler';
+import {COLORS} from '../../../constants/COLORS';
 
 const InputField = ({label}) => {
   return (
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 16,
-    color: '#7d8797',
+    color: COLORS.text.secondary,
     marginBottom: 6,
     fontFamily: 'Nunito-Regular',
   },

@@ -1,12 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {StyleSheet, View} from 'react-native';
 import {Button, Gap, Header, InputField} from '../../components';
 import {COLORS} from '../../constants/COLORS';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header />
+      <Header title="Create Account" onPress={() => navigation.goBack()} />
       <View style={styles.content}>
         <InputField label="Full Name" />
         <Gap height={24} />

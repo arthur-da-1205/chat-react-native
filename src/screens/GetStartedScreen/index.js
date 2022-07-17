@@ -2,6 +2,7 @@ import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {ImageBg, Logo} from '../../assets';
 import {Button, Gap} from '../../components';
+import {COLORS} from '../../constants/COLORS';
 
 const GetStratedScreen = ({navigation}) => {
   return (
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
   desc: {
     fontSize: 28,
     fontWeigth: '600',
-    color: 'white',
+    color: COLORS.white,
     marginTop: 91,
     fontFamily: 'Nunito-SemiBold',
   },
