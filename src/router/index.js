@@ -5,6 +5,7 @@ import {
   SignInScreen,
   SignUpScreen,
   SplashScreen,
+  UploadPhotoScreen,
 } from '../screens';
 
 const Stack = createNativeStackNavigator();
@@ -30,6 +31,11 @@ const Router = () => {
       <Stack.Screen
         name="SignUpScreen"
         component={SignUpScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="UploadPhotoScreen"
+        component={UploadPhotoScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

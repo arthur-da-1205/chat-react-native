@@ -16,7 +16,10 @@ const SignUpScreen = ({navigation}) => {
         <Gap height={24} />
         <InputField label="Password" />
         <Gap height={40} />
-        <Button title="Continue" />
+        <Button
+          title="Continue"
+          onPress={() => navigation.navigate('UploadPhotoScreen')}
+        />
       </View>
     </View>
   );
